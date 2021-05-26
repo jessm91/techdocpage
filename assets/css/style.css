@@ -22,7 +22,7 @@ code {
     display: block;
 }
 
-header h1 {
+header {
     font-weight: bold;
     font-size: 28px;
 }
@@ -31,4 +31,16 @@ main {
     margin-left: 340px;
     margin-right: 40px;
     margin-top: 40px;
+}
+
+@media screen and (max-width: 600px) {
+    nav {
+        position: relative;
+    }
+
+    main {
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-top: 0px;
+    }
 }
