@@ -9,42 +9,108 @@
 </head>
 
 <body>
-    <header>
-        CSS Introduction
 
-        <nav>
+    <header>
+        <nav id="navbar">
+            <h1>CSS Documentation</h1>
             <ul>
-                <li>CSS Introduction</li>
-                <li>Box Model</li>
-                <li>Colors</li>
-                <li>Typography</li>
-                <li>Grid</li>
+                <li><a href="#css_introduction" class="nav-link">CSS Introduction</a></li>
+                <li><a href="#box_model" class="nav-link">Box Model</a></li>
+                <li><a href="#colors" class="nav-link">Colors</a></li>
+                <li><a href="#typography" class="nav-link">Typography</a></li>
+                <li><a href="#grid" class="nav-link">Grid</a></li>
             </ul>
         </nav>
     </header>
 
     <main id="main-doc">
-        <section>
+        <section class="main-section" id="css_introduction">
+            <h1>CSS Introduction</h1>
+                <p>CSS is a complex language that packs quite a bit of power.</p>
+                <p>It allows us to add layout and design to our pages, and it allows us to share those styles from element to element and page to page.</p>
+                
+                <code>#food {
+                    background: green;
+                    }
+                    p {
+                    background: orange;
+                    }
+                </code>
+
+                <ul>
+                    <li>Selectors</li>
+                    <li>Visual Rules</li>
+                    <li>Display</li>
+                    <li>Positioning</li>
+                    <li>CSS & HTML</li>
+                </ul>
+            </section>
+
+        <section class="main-section" id="box_model">
+            <h1>Box Model</h1>
+                <p>According to the box model concept, every element on a page is a rectangular box and may have width, height, padding, borders, and margins.</p>
+                <p>Every element is a rectangular box, and there are several properties that determine the size of that box. The core of the box is defined by the width and height of an element, which may be determined by the display property, by the contents of the element, or by specified width and height properties. padding and then border expand the dimensions of the box outward from the element’s width and height. Lastly, any margin we have specified will follow the border.</p>
+            
+                  <code>div {
+                  border: 6px solid #949599;
+                  height: 100px;
+                  margin: 20px;
+                  padding: 20px;
+                  width: 400px;
+                  }
+                  </code>
+        </section>
+
+        <section class="main-section" id="colors">
+            <h1>Colors</h1>
+                <p>The only property we need to set the color of text is the color property. The color property accepts one color value, but in many different formats.</p>
+                <p>Hexadecimal values are the most prevalent, as they provide the most control with the least amount of effort.</p>
+                
+                  <code>p {
+                    background: orange;
+                    font-size: 24px;
+                    }
+                    p {
+                    background: green;
+                    }
+                  </code>
+        </section>
+
+        <section class="main-section" id="typography">
+            <h1>Typography</h1>
+                <p>CSS offers a lot of different properties for editing the look and feel of text on a page. These properties fit into two categories: font-based properties and text-based properties.</p>
+                <p>Font family, font size, font style, font variant, font weight & line height are just a few examples of how typography can be altered using CSS.</p>
+                  
+                  <code>body {
+                  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+                  }
+                  </code>
 
         </section>
 
-        <section>
+        <section class="main-section" id="grip">
+            <h1>Grid</h1>
+                <p>Flexible grids are great for positioning content.</p>
+                <p>Row and column size are altered and justified to create a layout.</p>
 
-        </section>
-
-        <section>
-
-        </section>
-
-        <section>
-
-        </section>
-
-        <section>
-
+                  <code>.container {
+                    width: 538px;
+                    }
+                    section,
+                    aside {
+                    margin: 10px;
+                    }
+                    section {
+                    float: left;
+                    width: 340px;
+                    }
+                    aside {
+                    float: right;
+                    width: 158px;
+                    }
+                  </code>
         </section>
     </main>
-
     
 </body>
 </html>
