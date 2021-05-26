@@ -24,11 +24,15 @@ code {
 
 header {
     font-weight: bold;
+    font-size: 32px;
+}
+
+header h1 {
     font-size: 28px;
 }
 
 main {
-    margin-left: 340px;
+    margin-left: 370px;
     margin-right: 40px;
     margin-top: 40px;
 }
