@@ -2,6 +2,10 @@ nav {
     position: fixed;
 }
 
+nav li {
+    list-style: none;
+}
+
 nav a {
     display: block;
     border: 2px solid black;
@@ -10,4 +14,21 @@ nav a {
     text-decoration: none;
     color: black;
     text-align: center;
+}
+
+code {
+    background-color:#CCC;
+    padding: 25px;
+    display: block;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+main {
+    margin-left: 340px;
+    margin-right: 40px;
+    margin-top: 40px;
 }
